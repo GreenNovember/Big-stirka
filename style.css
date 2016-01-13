@@ -1,1 +1,91 @@
-hhhhh
+body
+{
+	box-sizing: border-box;
+}
+
+section
+{
+	width: 100%;
+	min-width: 1300px;
+}
+
+.header
+{
+	height: 100px;
+}
+
+.fat 
+{
+	width: 170px;
+	height: 20px;
+}
+.left-side-menu
+{
+	float:left;
+	background-color: #5093ee;
+	width: 40%;
+	height: 70px;
+	padding-top: 25px;
+	padding-left: 45px;
+	box-sizing: border-box;
+	border: 1px red solid;
+}
+
+.right-side-menu
+{
+	float: right;
+	background-color: #5093ee;
+	width: 40%;
+	height: 70px;
+	padding-left: 45px;
+	padding-top: 25px;
+	box-sizing: border-box;
+	border: 1px green solid;
+}
+
+.left-side-menu li 
+{
+	float: left;
+}
+
+.left-side-menu li a
+{
+	//padding: 10px 5% 10px 5%;
+	font-family: "Impact";
+	font-size: 16pt;
+	text-decoration: none;
+	color: white;
+	
+}
+
+.right-side-menu li 
+{
+	float: left;
+}
+
+.right-side-menu li a
+{
+	//padding: 10px 2% 10px 2%;
+	font-family: "Impact";
+	text-decoration: none;
+	font-size: 16pt;
+	color: white;
+}
+
+.logo 
+{
+	float:left;
+	width: 180px;
+	height: 110px;
+}
+
+.logo img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.basket
+{
+	float: right;
+}

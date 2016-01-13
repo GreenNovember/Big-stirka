@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <html>
+
 <head>
 <meta charset="utf-8">
 
@@ -12,7 +13,240 @@
 <title>Большая стирка</title>
 </head>
 
+<script
+	src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+	var myCenter=new google.maps.LatLng(48.0217793,37.8595665);
+	var marker;
+
+	function initialize()
+	{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:17,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	var marker=new google.maps.Marker({
+	  position:myCenter
+	  });
+
+	marker.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
 <body>
+	<section class="header">
+		<ul class="left-side-menu">
+			<li><a href="">ГЛАВНАЯ</a><li>
+			<li><a href="">КАТАЛОГ</a><li>
+			<li class="fat"><a href="">ГРАФИК РАБОТЫ</a><li>
+			<li><a href="">АКЦИИ</a><li>
+		</ul>
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+		<div class="basket">
+			<img src="img/basket.png">
+			<p>
+			В корзине:<br>
+			Сумма:<b id="sum"></b>	
+			</p>
+		</div>
+		<ul class="right-side-menu">
+			<li><a href="">О НАС</a><li>
+			<li><a href="">КОНТАКТЫ</a><li>
+			<li><a href="">АКЦИИ</a><li>
+			<li><a href="">БРЕНДЫ</a><li>
+		</ul>
+	</section>
+	
+	<section class="slider">
+		
+	</section>
+	
+	<section class="search">
+		<p>
+			НАЙДИ НУЖНЫЙ ВАМ ТОВАР
+		</p>
+		<form action="/searchitem" method="post">
+			<input type="search" name="search" placeholder="Найди товар">
+			<input type="submit" value="ПОИСК">
+		</form>
+	</section>
+	
+	<section class="brand">
+		<div class="slider">
+			<div class="slider-item">
+				<img src="img/nivea.png">
+				<img src="img/dove.png">
+				<img src="img/freken.png">
+				<img src="img/lady.png">
+				<img src="img/selpac.png">
+				<img src="img/lenor.png">
+				<img src="img/duru.png">
+				<img src="img/sto.png">
+				<img src="img/line.png">
+				<img src="img/bella.png">
+			</div>
+			<div class="slider-item">
+				<img src="img/nivea.png">
+				<img src="img/dove.png">
+				<img src="img/freken.png">
+				<img src="img/lady.png">
+				<img src="img/selpac.png">
+				<img src="img/lenor.png">
+				<img src="img/duru.png">
+				<img src="img/sto.png">
+				<img src="img/line.png">
+				<img src="img/bella.png">
+			</div>
+			<div class="slider-item">
+				<img src="img/nivea.png">
+				<img src="img/dove.png">
+				<img src="img/freken.png">
+				<img src="img/lady.png">
+				<img src="img/selpac.png">
+				<img src="img/lenor.png">
+				<img src="img/duru.png">
+				<img src="img/sto.png">
+				<img src="img/line.png">
+				<img src="img/bella.png">
+			</div>
+		</div>
+		<div class="left-arrow">
+			<img src="img/left.png">
+		</div>
+		<div class="right-arrow">
+			<img src="img/right.png">
+		</div>
+	</section>
+	
+	<section class="catalog">
+		<h1>
+			КАТАЛОГ
+		</h1>
+		<div class="powder">
+			<h2>
+				СТИРАЛЬНЫЕ<br>
+				ПОРОШКИ
+			</h2>
+			<img src="img/poroshok.png">
+		</div>
+		<div class="shampoo">
+			<h2>
+				ШАМПУНЬ
+			</h2>
+			<img src="img/shampuni.png">
+		</div>
+		<div class="toothpaste">
+			<h2>
+				ЗУБНЫЕ ПАСТЫ
+			</h2>
+			<img src="img/pasti.png">
+		</div>
+		<div class="gels-washing">
+			<h2>
+				ГЕЛИ ДЛЯ<br>
+				СТИРКИ
+			</h2>
+			<img src="img/geli.png">
+		</div>
+		<div class="dishwashing">
+			<h2>
+				СРЕДСТВА ДЛЯ<br>
+				МЫТЬЯ ПОСУДЫ
+			</h2>
+			<img src="img/posuda.png">
+		</div>
+	</section>
+	
+	<section class="social-networks">
+		<div class="facebook">
+			<img src="img/facebook.png">
+		</div>
+		<div class="google+">
+			<img src="img/google.png">
+		</div>
+		<div class="twitter">
+			<img src="img/twitter.png">
+		</div>
+		<div class="vk">
+			<img src="img/vk.png">
+		</div>
+		<div class="instagram">
+			<img src="img/instagram.png">
+		</div>
+	</section>
+	
+	<section class="map">
+		<div class="above-map">
+			<h1>
+				МЫ НАХОДИМСЯ СОВСЕМ РЯДОМ
+			</h1>
+		</div>
+		<div id="googleMap"></div>
+		<div class="bottles">
+			<img src="img/">
+		</div>
+		<div class="for-connect">
+			<img src="img/">
+			<h1>
+				СВЯЖИСЬ С НАМИ
+			</h1>
+		</div>
+	</section>
+	
+	<section class="footer">
+		<form>
+			<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email">
+			<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text">
+			<label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
+			<input id="send" type="submit" value="ОТПРАВИТЬ">
+		</form>
+		<div class="footer-item">
+			<img src="img/">
+			<h1>
+				БЫТОВАЯ ХИМИЯ
+			</h1>
+			<p>
+				095-477-45-84 Юлия<br>
+				093-851-92-83 Жанна<br>
+				095-687-91-44 Юрий
+			</p>
+		</div>
+		<div class="footer-item">
+			<img src="img/">
+			<h1>
+				КОСМЕТИКА
+			</h1>
+			<p>	
+				095-606-35-28 Любовь<br>         
+				050-902-71-31 Марина
+			</p>
+		</div>
+		<div class="footer-item">
+			<img src="img/">
+			<h1>
+				СТ. МЕНЕДЖЕР
+			</h1>
+			<p>	
+				050-69-56-725 Наталья
+			</p>
+		</div>
+	</section>
+	
+	<section class="last-footer">
+		<p>
+			2016 © big-stirka.ru. Все права защищены
+		</p>
+	</section>
 	
 </body>
 </html>
