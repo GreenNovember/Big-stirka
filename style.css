@@ -11,7 +11,8 @@ section
 
 .header
 {
-	height: 100px;
+    height: 70px;
+    background: #5093EE;
 }
 
 .fat 
@@ -21,31 +22,33 @@ section
 }
 .left-side-menu
 {
-	float:left;
-	background-color: #5093ee;
-	width: 40%;
-	height: 70px;
-	padding-top: 25px;
-	padding-left: 45px;
-	box-sizing: border-box;
-	border: 1px red solid;
+float: left;
+    background-color: #5093ee;
+    /* width: 40%; */
+    height: 70px;
+    padding-top: 15px;
+    /* padding-left: 45px; */
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+    margin-left: 40px;
 }
 
 .right-side-menu
 {
-	float: right;
-	background-color: #5093ee;
-	width: 40%;
-	height: 70px;
-	padding-left: 45px;
-	padding-top: 25px;
-	box-sizing: border-box;
-	border: 1px green solid;
+    float: right;
+    background-color: #5093ee;
+    /* width: 40%; */
+    height: 70px;
+    padding-left: 45px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    /* border: 1px green solid; */
 }
 
 .left-side-menu li 
 {
-	float: left;
+    float: left;
+    padding: 10px 12px 10px 12px;
 }
 
 .left-side-menu li a
@@ -60,7 +63,8 @@ section
 
 .right-side-menu li 
 {
-	float: left;
+    float: left;
+    padding: 10px 12px 10px 12px;
 }
 
 .right-side-menu li a
@@ -74,9 +78,9 @@ section
 
 .logo 
 {
-	float:left;
-	width: 180px;
-	height: 110px;
+    float: left;
+    width: 180px;
+    height: 110px;
 }
 
 .logo img
@@ -87,5 +91,20 @@ section
 
 .basket
 {
-	float: right;
+	    float: right;
+    width: 150px;
+    padding: 15px;
+}
+
+.basket p {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: white;
+    font-size: 12pt;
+    font-family: 'Arial';
+}
+
+.basket img {
+    float: left;
 }
