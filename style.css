@@ -13,74 +13,58 @@ section
 {
     height: 70px;
     background: #5093EE;
+	margin-bottom: 40px;
+
+}
+.center {
+	width:1300px;
+	height:70px;
+	position:relative;
+	margin:auto;
 }
 
-.fat 
-{
-	width: 170px;
-	height: 20px;
+.side-menu {
+    background-color: #5093ee;
+    height: 70px;
+    box-sizing: border-box;
 }
 .left-side-menu
 {
-float: left;
-    background-color: #5093ee;
-    /* width: 40%; */
-    height: 70px;
-    padding-top: 15px;
-    /* padding-left: 45px; */
-    box-sizing: border-box;
-    /* border: 1px red solid; */
-    margin-left: 40px;
+	float: left;   
 }
 
 .right-side-menu
 {
-    float: right;
-    background-color: #5093ee;
-    /* width: 40%; */
-    height: 70px;
-    padding-left: 45px;
-    padding-top: 15px;
-    box-sizing: border-box;
-    /* border: 1px green solid; */
+	float: right;
 }
 
+.right-side-menu li,
 .left-side-menu li 
 {
     float: left;
-    padding: 10px 12px 10px 12px;
+	padding: 30px 20px 30px 20px;
 }
 
+.right-side-menu li a,
 .left-side-menu li a
 {
-	//padding: 10px 5% 10px 5%;
-	font-family: "Impact";
-	font-size: 16pt;
-	text-decoration: none;
-	color: white;
+    font-family: "Impact";
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;	
 	
 }
 
-.right-side-menu li 
-{
-    float: left;
-    padding: 10px 12px 10px 12px;
+.right-side-menu li:hover,
+.left-side-menu li:hover {
+	background:rgba(255,255,255,0.4);
 }
-
-.right-side-menu li a
-{
-	//padding: 10px 2% 10px 2%;
-	font-family: "Impact";
-	text-decoration: none;
-	font-size: 16pt;
-	color: white;
-}
-
 .logo 
 {
     float: left;
     width: 180px;
     height: 110px;
+	margin-left: 50px;
 }
 
 .logo img
@@ -91,20 +75,26 @@ float: left;
 
 .basket
 {
-	    float: right;
-    width: 150px;
+    float: right;
+    width: 180px;
     padding: 15px;
+    box-sizing: border-box;
+	cursor:pointer;
 }
 
 .basket p {
-    float: left;
-    margin-left: 5px;
+margin-left: 5px;
     margin-top: 5px;
     color: white;
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: 'Arial';
 }
 
 .basket img {
     float: left;
+	margin-right: 10px;
+}
+
+.basket #sum {
+	color: #FF0B14;
 }
