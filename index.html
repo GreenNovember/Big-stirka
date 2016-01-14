@@ -4,11 +4,18 @@
 
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="css/example.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
 <link href="reset.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 <script src="js/jquery-2.1.4.min.js"></script>
 
+
+<meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+
+  <!-- CSS for slidesjs.com example -->
 
 <title>Большая стирка</title>
 </head>
@@ -70,17 +77,27 @@
 	</section>
 	
 	<section class="slider">
-		
+		<div id="slides">
+	  <img src="img/1.jpg">
+      <img src="img/1.jpg">
+      <img src="img/1.jpg">
+      <img src="img/1.jpg">
+		</div>
 	</section>
 	
 	<section class="search">
+		<div class="etc">
 		<p>
-			НАЙДИ НУЖНЫЙ ВАМ ТОВАР
+			НАЙДИТЕ НУЖНЫЙ ВАМ ТОВАР
 		</p>
-		<form action="/searchitem" method="post">
+		<form class="search-form" action="/searchitem" method="post">
 			<input type="search" name="search" placeholder="Найди товар">
 			<input type="submit" value="ПОИСК">
 		</form>
+		</div>
+		<div class="arrow">
+			<img src="img/arrow.png">
+		</div>
 	</section>
 	
 	<section class="brand">
@@ -251,4 +268,24 @@
 	</section>
 	
 </body>
+
+<!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
+  
 </html>
