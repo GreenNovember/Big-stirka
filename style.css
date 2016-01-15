@@ -114,6 +114,16 @@ section
 {
 	margin: 0 auto;
 	height: 470px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider2
+{
+	margin: 0 auto;
+	height: 302px;
+	position: relative;
+	overflow: hidden;
 }
 
 .search
@@ -139,9 +149,318 @@ section
 	margin: 0 auto;
 	margin-left: 190px;
 }
+
+
+.etc p
+{
+	float: left;
+	margin-top: 15px;
+	font-family: "Impact";
+    font-size: 22pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+}
+
+.etc .search-form
+{
+	float: right;
+}
+
+input[type="search"]
+{
+	margin-top: 8px;
+	width: 550px;
+	height: 40px;
+	border: none;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+input[type="submit"]
+{
+	float: right;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-family: "Impact";
+    font-size: 22pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+	background: #007DCD;
+	border: none;
+}
+
 .brand
 {
-	border: 1px green solid;
+	margin-top: 100px;
+	
+}
+
+.slider-item
+{
+	position: relative;
+	margin: 0 auto;
+	width: 1300px;
+	height: 300px;
+}
+
+.slider-item img
+{
+	float:left;
+	padding: 20px 80px 20px 80px;
+	filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */ 
+	filter: gray; /* IE6-9 */ 
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	
+}
+
+.slider-item img:hover
+{
+	float:left;
+	padding: 20px 80px 20px 80px;
+	filter:none; /* Firefox 10+, Firefox on Android */ 
+	filter: none; /* IE6-9 */ 
+	-webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	
+}
+
+.left-arrow
+{
+	float: left;
+	margin-top: -180px;
+	margin-left: 80px;
+	
+}
+
+.right-arrow
+{
+	float: right;
+	margin-top: -180px;
+	margin-right: 80px;
+}
+
+.catalog
+{
+	width: 100%;
+	height: 700px;
+	background: #007DCD;
+}
+
+.catalog h1
+{
+	text-align: center;
+	margin-bottom: 10px;
+	float: left;
+	margin-top: 15px;
+	font-family: "Impact";
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+	width: 100%;
+	
+}
+
+.pp
+{
+	float: left;
+	width: 20%;
+	height: 700px;
+	overflow: hidden;
+}
+
+.pp img
+{
+	position: relative;
+	transform:scale(1.4,1.4);
+}
+
+.powder img
+{
+	transform:scale(1.4,1.4) translateX(-20px);
+}
+
+.shampoo img
+{
+	transform:scale(1.4,1.4) translate(30px,18px);
+}
+
+.toothpaste img
+{
+	transform:scale(1.4,1.4) translateY(18px);
+}
+
+.gels-washing img
+{
+	transform:scale(1.4,1.42) translateY(2px);
+}
+
+.powder
+{
+	background: #0062A4;
+}
+
+.shampoo
+{
+	background: #F9522D;
+}
+
+.toothpaste
+{
+	background: #00CCFF;
+}
+
+.gels-washing
+{
+	background: #006BAE;
+}
+
+.dishwashing
+{
+	background: #00628B;
+}
+
+.catalog h2
+{
+	text-align: center;
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-family: "Arial";
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;	
+	width: 100%;
+}
+
+.social-networks
+{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.sn
+{
+	float: left;
+	width: 20%;
+	height: 60px;
+}
+
+.facebook
+{
+	background: #0062A4 url("img/facebook.png") center no-repeat;	
+}
+
+.google
+{
+	background: #F9522D url("img/google.png") center no-repeat;
+}
+
+.twitter
+{
+	background: #00CCFF url("img/twitter.png") center no-repeat;
+}
+
+
+.vk
+{
+	background: #006BAE url("img/vk.png") center no-repeat;
+}
+
+.instagram
+{
+	background: #00628B url("img/instagram.png") center no-repeat;
+}
+
+.map
+{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.above-map
+{
+	background: #007DCD;
+	width: 100%;
+	height: 50px;
+
+}
+
+.above-map h1
+{
+	text-align: center;
+	margin-bottom: 10px;
+	float: left;
+	margin-top: 15px;
+	font-family: "Impact";
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+	width: 100%;
+	
+}
+
+.arrow1 
+{
+	width: 76px;
+	position: relative;
+	margin: 0 auto;
+	top: -10px;
+	z-index:10000;
+}
+
+#googleMap 
+{
+	width: 100%;
+	height: 500px;
+}
+
+.bottles
+{
+	width: 100%;
+	position: relative;
+	height: 50px;
+	background: #008DE7;
+	margin-top: -50px;
+}
+
+.bottles img
+{
+	position: absolute;
+	right: 0;
+	width: 650px;
+	margin-top: -190px;
+    height: 190px;
+}
+
+.for-connect
+{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	margin-top: -30px;
+	background:url("img/podlog.png") no-repeat;
+}
+
+.for-connect h1
+{
+	margin-bottom: 10px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-family: "Impact";
+    font-size: 18pt;
+    text-decoration: none;
+    color: #008DE7;	
+	font-weight: 100;
+	width: 100%;
 }
 
 //Слайдер
@@ -256,44 +575,5 @@ section
     }
 
 
-.etc p
-{
-	float: left;
-	margin-top: 15px;
-	font-family: "Impact";
-    font-size: 22pt;
-    text-decoration: none;
-    color: white;	
-	font-weight: 100;
-}
-
-.etc .search-form
-{
-	float: right;
-}
-
-input[type="search"]
-{
-	margin-top: 8px;
-	width: 550px;
-	height: 40px;
-	border: none;
-	padding-left: 20px;
-	box-sizing: border-box;
-}
-
-input[type="submit"]
-{
-	float: right;
-	margin-left: 50px;
-	margin-top: 10px;
-	font-family: "Impact";
-    font-size: 22pt;
-    text-decoration: none;
-    color: white;	
-	font-weight: 100;
-	background: #007DCD;
-	border: none;
-}
 
 

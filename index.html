@@ -31,7 +31,7 @@
 	function initialize()
 	{
 	var mapProp = {
-	  center:myCenter,
+	  center: {lat: 48.0223893, lng: 37.8595665},
 	  zoom:17,
 	  mapTypeId:google.maps.MapTypeId.ROADMAP
 	  };
@@ -39,7 +39,8 @@
 	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 	var marker=new google.maps.Marker({
-	  position:myCenter
+	  position:myCenter,
+      icon:'img/maptable.png'
 	  });
 
 	marker.setMap(map);
@@ -101,7 +102,7 @@
 	</section>
 	
 	<section class="brand">
-		<div class="slider">
+		<div class="slider2">
 			<div class="slider-item">
 				<img src="img/nivea.png">
 				<img src="img/dove.png">
@@ -151,33 +152,33 @@
 		<h1>
 			КАТАЛОГ
 		</h1>
-		<div class="powder">
+		<div class="pp powder">
 			<h2>
 				СТИРАЛЬНЫЕ<br>
 				ПОРОШКИ
 			</h2>
 			<img src="img/poroshok.png">
 		</div>
-		<div class="shampoo">
+		<div class="pp shampoo">
 			<h2>
 				ШАМПУНЬ
 			</h2>
 			<img src="img/shampuni.png">
 		</div>
-		<div class="toothpaste">
+		<div class="pp toothpaste">
 			<h2>
 				ЗУБНЫЕ ПАСТЫ
 			</h2>
 			<img src="img/pasti.png">
 		</div>
-		<div class="gels-washing">
+		<div class="pp gels-washing">
 			<h2>
 				ГЕЛИ ДЛЯ<br>
 				СТИРКИ
 			</h2>
 			<img src="img/geli.png">
 		</div>
-		<div class="dishwashing">
+		<div class="pp dishwashing">
 			<h2>
 				СРЕДСТВА ДЛЯ<br>
 				МЫТЬЯ ПОСУДЫ
@@ -187,20 +188,15 @@
 	</section>
 	
 	<section class="social-networks">
-		<div class="facebook">
-			<img src="img/facebook.png">
+		<div class="sn facebook">
 		</div>
-		<div class="google+">
-			<img src="img/google.png">
+		<div class="sn google">
 		</div>
-		<div class="twitter">
-			<img src="img/twitter.png">
+		<div class="sn twitter">
 		</div>
-		<div class="vk">
-			<img src="img/vk.png">
+		<div class="sn vk">
 		</div>
-		<div class="instagram">
-			<img src="img/instagram.png">
+		<div class="sn instagram">
 		</div>
 	</section>
 	
@@ -209,13 +205,15 @@
 			<h1>
 				МЫ НАХОДИМСЯ СОВСЕМ РЯДОМ
 			</h1>
+			<div class="arrow1">
+				<img src="img/arrow.png">
+			</div>
 		</div>
 		<div id="googleMap"></div>
 		<div class="bottles">
-			<img src="img/">
+			<img src="img/bottle.png">
 		</div>
 		<div class="for-connect">
-			<img src="img/">
 			<h1>
 				СВЯЖИСЬ С НАМИ
 			</h1>
