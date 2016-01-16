@@ -139,7 +139,7 @@ section
 	width: 76px;
 	position: relative;
 	margin: 0 auto;
-	top:2px;
+	top: -250px;
 }
 
 .etc
@@ -170,7 +170,7 @@ section
 input[type="search"]
 {
 	margin-top: 8px;
-	width: 550px;
+	width: 520px;
 	height: 40px;
 	border: none;
 	padding-left: 20px;
@@ -180,8 +180,8 @@ input[type="search"]
 input[type="submit"]
 {
 	float: right;
-	margin-left: 50px;
-	margin-top: 10px;
+	margin-right: -10px;
+	margin-top: -38px;
 	font-family: "Impact";
     font-size: 22pt;
     text-decoration: none;
@@ -379,7 +379,7 @@ input[type="submit"]
 .map
 {
 	width: 100%;
-	height: 600px;
+	height: 570px;
 	position: relative;
 	margin-top: 20px;
 }
@@ -461,6 +461,174 @@ input[type="submit"]
     color: #008DE7;	
 	font-weight: 100;
 	width: 100%;
+}
+
+.footer
+{
+	position: relative;
+	width: 100%;
+	height: 290px;
+	background: #006BAE;
+}
+
+form
+{
+	float: left;
+	width: 600px;
+	height: 300px;	
+}
+
+.input-group 
+{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+	margin-left: 18px;
+}
+
+.footer input[type="email"],
+.footer input[type="text"]
+{
+    margin-top: -3px;
+    margin-left: -25px;
+    width: 415px;
+    height: 37px;
+    border: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer input[type="submit"]
+{
+	margin-right: 140px;
+	margin-top: -5px;
+	width: 300px;
+	height: 40px;
+	background: #008DE7;
+	box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
+}
+
+.footer label
+{
+    position: relative;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    background: url("img/lineconnect.png") center no-repeat;
+    background-size: 150px 40px;
+    z-index: 10000;
+	font-family: 'Impact';
+}
+
+.general-items
+{
+	float: right;
+	width: 860px;
+	height: 300px;
+	margin-left: 20px;
+	//border: 1px green solid;
+}
+
+.footer-item
+{
+	float: left;
+	width: 250px;
+	height: 300px;
+	//border: 1px yellow solid;
+}
+
+.footer-item h1
+{
+	text-align: center;
+	float: left;
+	font-family: "Impact";
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+	width: 100%;
+}
+
+.footer-item p
+{
+	margin-top: 10px;
+	text-align: center;
+	float: right;
+	font-family: "Arial";
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;	
+	width: 100%;
+}
+
+.footer-item img
+{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	position: relative;
+	height: 72px;
+}
+
+.footer-item:nth-of-type(1) img
+{
+	margin-left: 107px;
+}
+
+.footer-item:nth-of-type(2) img
+{
+	margin-left: 100px;
+}
+
+.footer-item:nth-of-type(3) img
+{
+	margin-left: 95px;
+}
+
+.footer .input-group:nth-of-type(1) input
+{
+	width: 418px;
+    padding: 0px 0px 0px 30px;
+}
+
+.footer .input-group:nth-of-type(2) label
+{
+	margin-left: 4px;
+}
+
+.footer .input-group:nth-of-type(2) input
+{
+	margin-left: -21px;
+	padding-left:30px;
+}
+
+.footer .input-group:nth-of-type(3) label
+{
+	top: 6px;
+    margin-left: -2px;
+}
+
+.footer .input-group:nth-of-type(3) textarea
+{
+	height: 70px;
+    padding: 20px;
+	margin-top: -5px;
+    position: relative;
+    margin-left: -17px;
+    width: 365px;
+}
+
+.last-footer
+{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 20px;
+}
+
+.last-footer p
+{
+	color: #008DE7;
 }
 
 //Слайдер

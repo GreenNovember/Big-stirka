@@ -93,7 +93,7 @@
 		</p>
 		<form class="search-form" action="/searchitem" method="post">
 			<input type="search" name="search" placeholder="Найди товар">
-			<input type="submit" value="ПОИСК">
+			<input class="one" type="submit" value="ПОИСК">
 		</form>
 		</div>
 		<div class="arrow">
@@ -222,24 +222,33 @@
 	
 	<section class="footer">
 		<form>
-			<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email">
-			<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text">
-			<label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
-			<input id="send" type="submit" value="ОТПРАВИТЬ">
+			<div class="input-group">
+				<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email">
+			</div>
+			<div class="input-group">
+				<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text">
+			</div>
+			<div class="input-group">
+				<label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
+			</div>
+			<div class="input-group">
+				<input id="send" type="submit" value="Отправить">
+			</div>
 		</form>
+		<div class="general-items">
+			<div class="footer-item">
+				<img src="img/footer-c.png">
+				<h1>
+					БЫТОВАЯ ХИМИЯ
+				</h1>
+				<p>
+					095-477-45-84 Юлия<br>
+					093-851-92-83 Жанна<br>
+					095-687-91-44 Юрий
+				</p>
+			</div>
 		<div class="footer-item">
-			<img src="img/">
-			<h1>
-				БЫТОВАЯ ХИМИЯ
-			</h1>
-			<p>
-				095-477-45-84 Юлия<br>
-				093-851-92-83 Жанна<br>
-				095-687-91-44 Юрий
-			</p>
-		</div>
-		<div class="footer-item">
-			<img src="img/">
+			<img src="img/tsh.png">
 			<h1>
 				КОСМЕТИКА
 			</h1>
@@ -249,13 +258,14 @@
 			</p>
 		</div>
 		<div class="footer-item">
-			<img src="img/">
+			<img src="img/manager.png">
 			<h1>
 				СТ. МЕНЕДЖЕР
 			</h1>
 			<p>	
 				050-69-56-725 Наталья
 			</p>
+		</div>
 		</div>
 	</section>
 	
