@@ -296,13 +296,46 @@
   
   <script>
 	var currentslide=1;
+	var maxSlides = 3;
+	function go(current){
+			
+			$(".slider-item").each(function(a,b){
+				$(b).css({"transition":"1s","transform":"translate(0px,-3000px)"});
+			});
+			
+			switch(current){
+				case 1: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(0px)"});break;
+				case 2: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(-300px)"});break;
+				case 3: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(-600px)"});break;
+			}
+		
+			
+		
+	}
+	
+	go(1);
 	$(document).ready(function()
 	{
+	
+		
 		$(".left-arrow").click(function()
+		{			
+			
+			go(currentslide);
+			if (currentslide<maxSlides)
+				currentslide++;
+			else
+				currentslide = 1;
+		
+		});
+		
+		$(".right-arrow").click(function()
 		{
-			alert("test1");
-			$(".slider-item:nth-of-type("+currentslide+")").addClass("slider-item-goleft");
-			alert("test2");
+			go(currentslide);
+			if (currentslide>1)
+				currentslide--;
+			else
+				currentslide = maxSlides;
 		});
 	
 	
