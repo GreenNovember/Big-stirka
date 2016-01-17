@@ -9,8 +9,6 @@
 
 <link href="reset.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
-<script src="js/jquery-2.1.4.min.js"></script>
-
 
 <meta name="viewport" content="width=device-width">
   <!-- End SlidesJS Required -->
@@ -295,5 +293,25 @@
       });
     });
   </script>
+  
+  <script>
+	var currentslide=1;
+	$(document).ready(function()
+	{
+		$(".left-arrow").click(function()
+		{
+			alert("test1");
+			$(".slider-item:nth-of-type("+currentslide+")").addClass("slider-item-goleft");
+			alert("test2");
+		});
+	
+	
+	
+	
+	
+	
+	
+	});
+</script>
   
 </html>

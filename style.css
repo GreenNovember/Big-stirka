@@ -126,6 +126,7 @@ section
 	overflow: hidden;
 }
 
+
 .search
 {
 	margin: 0 auto;
@@ -203,7 +204,15 @@ input[type="submit"]
 	margin: 0 auto;
 	width: 1300px;
 	height: 300px;
+	transition: 1s;
 }
+
+.slider-item-goleft
+{
+	transition: 1s;
+	transform: translateX(-2000px);
+}
+
 
 .slider-item img
 {
