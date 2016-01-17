@@ -183,6 +183,10 @@
 			</h2>
 			<img src="img/posuda.png">
 		</div>
+		
+		<div class="pp-info shampoo-info">
+		
+		</div>
 	</section>
 	
 	<section class="social-networks">
@@ -339,10 +343,11 @@
 		});
 	
 	
-	
-	
-	
-	
+		$(".pp").click(function(){
+			$(".pp").css({"height":"55px"});
+			$(".pp h2").css({"margin-top":"10px","font-size":"15pt","transition":"1s","font-family":"Impact"});
+			$(".pp-info").css({"display":"block"});
+		});	
 	
 	});
 </script>

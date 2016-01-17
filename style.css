@@ -242,7 +242,13 @@ input[type="submit"]
     margin-left: 50px;
     left: 0;
     z-index: 10000;
-	
+	transition:1s;
+	cursor:pointer;
+}
+
+.left-arrow:hover {
+	transition:.5s;
+	transform:translateX(-3px);
 }
 
 .right-arrow
@@ -252,13 +258,22 @@ input[type="submit"]
     margin-right: 50px;
     right: 0;
     z-index: 10000;
+	transition:1s;
+	cursor:pointer;
+}
+
+.right-arrow:hover {
+	transition:.5s;
+	transform:translateX(3px);
 }
 
 .catalog
 {
 	width: 100%;
 	height: 700px;
+	overflow:hidden;
 	background: #007DCD;
+	
 }
 
 .catalog h1
@@ -282,12 +297,27 @@ input[type="submit"]
 	width: 20%;
 	height: 700px;
 	overflow: hidden;
+	transition:1s;
+	cursor:pointer;
+
+}
+
+
+.pp-info {
+	width:100%;
+	min-width:1300px;
+	height:800px;
+	background:#fff;
+	float:left;
+	display:none;
+	
 }
 
 .pp img
 {
 	position: relative;
 	transform:scale(1.4,1.4);
+		
 }
 
 .powder img
@@ -354,7 +384,7 @@ input[type="submit"]
 	width: 100%;
 	height: 40px;
 	position: relative;
-	margin-top: 50px;
+	margin-top: 1px;
 }
 
 .sn
@@ -362,6 +392,13 @@ input[type="submit"]
 	float: left;
 	width: 20%;
 	height: 60px;
+	transition:1s;
+	cursor:pointer;
+}
+
+.sn:hover {
+	background-color:rgb(0,234,255);
+	transition:1s;
 }
 
 .facebook
@@ -369,10 +406,14 @@ input[type="submit"]
 	background: #0062A4 url("img/facebook.png") center no-repeat;	
 }
 
+
+
 .google
 {
 	background: #F9522D url("img/google.png") center no-repeat;
 }
+
+
 
 .twitter
 {
