@@ -191,7 +191,7 @@ section
 
 .etc .search-form
 {
-	margin-left: 155px;
+	margin-left: 152px;
 }
 
 input[type="search"]
@@ -206,16 +206,22 @@ input[type="search"]
 
 .search-form input[type="submit"]
 {
-	margin-left: 550px;
-	margin-top: -58px;
-	font-family: "Impact";
+margin-left: 550px;
+    margin-top: -53px;
+    font-family: "Impact";
     font-size: 22pt;
     text-decoration: none;
-    color: white;	
-	font-weight: 100;
-	background: #007DCD;
-	border: none;
-	//border: 1px green solid;
+    color: white;
+    font-weight: 100;
+    background: RGB(0,125,205);
+    border: none;
+    padding: 9px 16px 16px 16px;
+    transition: 1s;
+}
+
+.search-form input[type="submit"]:hover {
+	background: #E4222C;
+	transition:1s;
 }
 
 .brand
@@ -352,8 +358,10 @@ input[type="search"]
 {
 	position: relative;
 	transform:scale(1.4,1.4);
-		
+	transition:1s;	
 }
+
+
 
 .powder img
 {
@@ -374,7 +382,12 @@ input[type="search"]
 {
 	transform:scale(1.4,1.42) translateY(2px);
 }
-
+@media (min-width:1600px) {
+	.pp img {
+    transform: scale(1,1) translateY(-18px);
+	transition:1s;
+	}
+}
 .powder
 {
 	background: #0062A4;

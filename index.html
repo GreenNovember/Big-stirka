@@ -90,7 +90,7 @@
 			НАЙДИТЕ НУЖНЫЙ ВАМ ТОВАР!
 		</p>
 		<form class="search-form" action="/searchitem" method="post">
-			<input type="search" name="search" placeholder="Найди товар">
+			<input type="search" name="search" placeholder="Найди товар" pattern="[a-zA-Z0-9]+">
 			<input class="one" type="submit" value="ПОИСК">
 		</form>
 		</div>
@@ -225,10 +225,10 @@
 	<section class="footer">
 		<form>
 			<div class="input-group">
-				<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email">
+				<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email" required>
 			</div>
 			<div class="input-group">
-				<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text">
+				<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text" pattern="[a-zA-Z0-9]+">
 			</div>
 			<div class="input-group">
 				<label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
