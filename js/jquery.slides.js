@@ -32,7 +32,7 @@
     pluginName = "slidesjs";
     defaults = {
       width: 940,
-      height: 528,
+      height: 560,
       start: 1,
       navigation: {
         active: true,
@@ -111,6 +111,7 @@
         width: "100%",
         zIndex: 0,
         display: "none",
+		height:"100%",
         webkitBackfaceVisibility: "hidden"
       });
       $.each($(".slidesjs-control", $element).children(), function(i) {
@@ -240,10 +241,10 @@
       width = $element.width();
       height = (this.options.height / this.options.width) * width;
       this.options.width = width;
-      this.options.height = 470;
+      this.options.height = 570;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
         width: width,
-        height: 470
+        height: 570
       });
     };
     Plugin.prototype.next = function(effect) {

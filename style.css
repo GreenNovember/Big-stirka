@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+    width: 10px;
+	height:10px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+	background: RGB(0,125,205);
+	
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: RGB(0,204,255);
+}
+
+
+
 body
 {
 	//box-sizing: border-box;
@@ -114,7 +135,7 @@ section
 .slider
 {
 	margin: 0 auto;
-	height: 470px;
+	height: 570px;
 	position: relative;
 	overflow: hidden;
 }
@@ -144,8 +165,6 @@ section
 	height: 62px;
 	position: relative;
 	margin: 0 auto;
-	margin-left: 190px;
-	//border: 1px black solid;
 }
 
 .arrow
@@ -160,13 +179,14 @@ section
 
 .etc p
 {
-	float: left;
-	margin-top: 15px;
-	font-family: "Impact";
+	    float: left;
+    margin-top: 15px;
+    font-family: "Impact";
     font-size: 22pt;
     text-decoration: none;
-    color: white;	
-	font-weight: 100;
+    color: white;
+    font-weight: 100;
+    margin-left: 70px;
 }
 
 .etc .search-form
@@ -184,7 +204,7 @@ input[type="search"]
 	box-sizing: border-box;
 }
 
-input[type="submit"]
+.search-form input[type="submit"]
 {
 	margin-left: 550px;
 	margin-top: -58px;
@@ -242,13 +262,16 @@ input[type="submit"]
 
 .left-arrow
 {
-    position: absolute;
-    margin-top: -210px;
-    margin-left: 50px;
+       position: absolute;
+    margin-top: -330px;
+    margin-left: 30px;
     left: 0;
     z-index: 10000;
-	transition:1s;
-	cursor:pointer;
+    transition: 1s;
+    cursor: pointer;
+    height: 300px;
+    width: 50px;
+    
 }
 
 .left-arrow:hover {
@@ -258,13 +281,20 @@ input[type="submit"]
 
 .right-arrow
 {
-	position: absolute;
-    margin-top: -210px;
-    margin-right: 50px;
+      position: absolute;
+    margin-top: -330px;
+    margin-left: 30px;
     right: 0;
     z-index: 10000;
-	transition:1s;
-	cursor:pointer;
+    transition: 1s;
+    cursor: pointer;
+    height: 300px;
+    width: 50px;
+}
+.right-arrow img,
+.left-arrow img {
+	    margin-top: 100px;
+    margin-left: 15px;
 }
 
 .right-arrow:hover {
@@ -520,14 +550,13 @@ input[type="submit"]
     text-decoration: none;
     color: #008DE7;	
 	font-weight: 100;
-	width: 100%;
 }
 
 .footer
 {
 	position: relative;
 	width: 100%;
-	height: 290px;
+	    height: 300px;
 	background: #006BAE;
 }
 
@@ -561,12 +590,19 @@ form
 
 .footer input[type="submit"]
 {
-	margin-right: 140px;
+	
 	margin-top: -5px;
 	width: 300px;
 	height: 40px;
 	background: #008DE7;
 	box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
+	font-family: "Impact";
+    font-size: 22pt;
+    text-decoration: none;
+    color: white;	
+	font-weight: 100;
+	border: none;
+	margin-left: 160px;
 }
 
 .footer label
@@ -582,11 +618,10 @@ form
 
 .general-items
 {
-	float: right;
+	float: left;
 	width: 860px;
 	height: 300px;
-	margin-left: 20px;
-	//border: 1px green solid;
+	transition:1s;
 }
 
 .footer-item
@@ -594,7 +629,7 @@ form
 	float: left;
 	width: 250px;
 	height: 300px;
-	//border: 1px yellow solid;
+transition:1s;
 }
 
 .footer-item h1
@@ -676,6 +711,35 @@ form
     position: relative;
     margin-left: -17px;
     width: 365px;
+}
+@media (max-width:1470px) {
+	.general-items
+	{
+		transition:1s;
+		width:650px;
+	}
+	
+	.footer-item {			
+			width: 210px;
+	}
+	.footer-item:nth-of-type(1) img {
+		margin-left: 87px;
+	}
+	.footer-item:nth-of-type(2) img {
+		margin-left: 80px;
+	}
+	.footer-item:nth-of-type(3) img {
+		margin-left: 75px;
+	}
+}
+
+
+@media (min-width:1680px) {
+	.general-items
+	{
+		transition:1s;
+		margin-left: 12%;
+	}
 }
 
 .last-footer
