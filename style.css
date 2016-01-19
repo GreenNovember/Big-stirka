@@ -890,12 +890,87 @@ transition:1s;
 }
 
 .info-item {
-	width:300px;
-	height: 450px;
-	border:1px green solid;
-	float:left;
-	margin:10px;
+   	float: left;
+	width: 20%;
+	height: 700px;
+	overflow: hidden;
+	transition:1s;
+	cursor:pointer;
+	box-sizing:border-box;
 }
+.info-item-title {
+position: relative;
+    margin: auto;
+    height: 50px;
+}
+.info-item-title h1{
+text-align: center;
+    margin-bottom: 10px;
+    float: left;
+    margin-top: 15px;
+    font-family: "Impact";
+    font-size: 18pt;
+    text-decoration: none;
+    color: #0062A4;
+    font-weight: 100;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    /* margin-top: 20px; */
+    bottom: 50px;
+}
+
+.info-item-control {
+    position: relative;
+	width:260px;
+    height: 70px;
+    /* background: red; */
+    margin: auto;
+}
+
+.info-item-control .item-like {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: -38px;
+   
+}
+.info-item-control .item-to-wallet img,
+.info-item-control .item-like img{
+	width: 100%;
+    height: 100%;
+}
+.info-item-control .item-to-wallet {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px;
+    margin-top: -38px;
+}
+
+.info-item-control .item-price {
+    width: 140px;
+    height: 60px;
+    background: url('img/price-label.png') center no-repeat;
+    background-size: cover;
+    float: right;
+    margin-top: -70px;
+	margin-right: -5px;
+}
+
+.info-item-control .item-price p {
+	float: right;
+    text-align: left;
+    width: 120px;
+    font-family: 'Impact';
+    color: white;
+    margin-top: 17px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 21pt;
+}
+
 
 .btn-item {
     margin-top: -5px;
@@ -924,4 +999,29 @@ transition:1s;
 	background:#F9522D;
 
 }
+
+.info-item:nth-of-type(1){
+	border-right: 2px solid #0062A4;
+}
+
+.info-item:nth-of-type(2){
+	border-right: 2px solid #F9522D;
+}
+
+.info-item:nth-of-type(3){
+	border-right: 2px solid #00CCFF;
+}
+
+.info-item:nth-of-type(4){
+	border-right: 2px solid #0062A4;
+}
+
+.info-item-img {
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    height: 470px;
+}
+
 
