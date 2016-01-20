@@ -73,6 +73,7 @@ section
 .right-side-menu li a,
 .left-side-menu li a
 {
+	cursor:pointer;
     font-family: "Impact";
     font-size: 14pt;
     text-decoration: none;
@@ -92,7 +93,7 @@ section
     float: left;
     width: 180px;
     height: 110px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 30px;
 }
 
@@ -196,7 +197,7 @@ section
 
 input[type="search"]
 {
-    margin-top: 8px;
+    margin-top: 10px;
     width: 520px;
     height: 40px;
     border: none;
@@ -207,7 +208,7 @@ input[type="search"]
 .search-form input[type="submit"]
 {
     margin-left: 550px;
-    margin-top: -53px;
+    margin-top: -57px;
     font-family: "Impact";
     font-size: 22pt;
     text-decoration: none;
@@ -413,15 +414,6 @@ input[type="search"]
     background: #00628B;
 }
 
-.general
-{
-	width: 100%;
-	height: 300px;
-	background: white;
-	position: relative;
-}
-
-
 .catalog h2
 {
     text-align: center;
@@ -440,14 +432,6 @@ input[type="search"]
 {
     width: 100%;
     height: 40px;
-    position: relative;
-    margin-top: 1px;
-}
-
-.about-social-networks
-{
-    width: 100%;
-    height: 60px;
     position: relative;
     margin-top: 1px;
 }
@@ -597,7 +581,7 @@ form
     height: 300px;	
 }
 
-.input-group 
+.input-group-2 
 {
     width: 100%;
     float: left;
@@ -709,38 +693,45 @@ form
 {
     margin-left: 95px;
 }
+.footer {
+float: left;
+}
+.footer .input-group-2 input,
+.footer .input-group-2 label {
+    display: initial;
+}
 
-.footer .input-group:nth-of-type(1) input
+.footer .input-group-2:nth-of-type(1) input
 {
     width: 418px;
     padding: 0px 0px 0px 30px;
 }
 
-.footer .input-group:nth-of-type(2) label
+.footer .input-group-2:nth-of-type(2) label
 {
     margin-left: 4px;
 }
 
-.footer .input-group:nth-of-type(2) input
+.footer .input-group-2:nth-of-type(2) input
 {
     margin-left: -21px;
     padding-left:30px;
+	
 }
 
-.footer .input-group:nth-of-type(3) label
+.footer .input-group-2:nth-of-type(3) label
 {
     top: 6px;
     margin-left: -2px;
 }
 
-.footer .input-group:nth-of-type(3) textarea
+.footer .input-group-2:nth-of-type(3) textarea
 {
-    height: 70px;
     padding: 20px;
-    margin-top: -5px;
     position: relative;
-    margin-left: -17px;
-    width: 365px;
+	margin: -5px 0px 0px -17px;
+    width: 405px;
+    height: 130px;
 }
 @media (max-width:1470px) {
     .general-items
@@ -1120,6 +1111,24 @@ form
     right: 10px;
     left: auto;
     margin: 0;
+}
+
+/*
+        ---
+*/
+
+.blue-bg {
+     background: #007DCD;
+}
+
+.blue-bg h4.modal-title  {
+    color: white ;
+    font-family: 'Impact';
+	font-size: 20pt;
+}
+
+.blue-bg img{
+	width:30px;
 }
 
 
