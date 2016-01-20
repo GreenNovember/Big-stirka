@@ -1,421 +1,369 @@
 <!doctype html>
 <html lang="ru">
-<html>
+    <html>
 
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/example.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+        <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/example.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<link href="reset.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+            <link href="reset.css" rel="stylesheet">
+            <link href="style.css" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width">
-  <!-- End SlidesJS Required -->
+            <meta name="viewport" content="width=device-width">
+            <!-- End SlidesJS Required -->
 
-  <!-- CSS for slidesjs.com example -->
+            <!-- CSS for slidesjs.com example -->
 
-<title>Большая стирка</title>
-</head>
+            <title>Большая стирка</title>
+        </head>
 
-<script
-	src="http://maps.googleapis.com/maps/api/js">
-</script>
+        <script
+            src="http://maps.googleapis.com/maps/api/js">
+        </script>
 
-<script>
-	var myCenter=new google.maps.LatLng(48.0217793,37.8595665);
-	var marker;
+        <script>
+            var myCenter = new google.maps.LatLng(48.0217793, 37.8595665);
+            var marker;
 
-	function initialize()
-	{
-	var mapProp = {
-	  center: {lat: 48.0223893, lng: 37.8595665},
-	  zoom:17,
-	  mapTypeId:google.maps.MapTypeId.ROADMAP
-	  };
+            function initialize()
+            {
+                var mapProp = {
+                    center: {lat: 48.0223893, lng: 37.8595665},
+                    zoom: 17,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
 
-	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-	var marker=new google.maps.Marker({
-	  position:myCenter,
-      icon:'img/maptable.png'
-	  });
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                    icon: 'img/maptable.png'
+                });
 
-	marker.setMap(map);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
 
 
-<body>
-	<section class="header">
-		<div class="center">
-			<ul class="side-menu left-side-menu">
-				<li><a href="">ГЛАВНАЯ</a></li>
-				<li><a href="">КАТАЛОГ</a></li>
-				<li><a href="">ГРАФИК РАБОТЫ</a></li>
-				<li><a href="">АКЦИИ</a></li>
-			</ul>
-			<div class="logo">
-				<img src="img/logo.png">
-			</div>
-			<div class="basket">
-				<img src="img/basket.png">
-				<p>
-				В корзине:<br>
-				Сумма:<b id="sum">10000p</b>	
-				</p>
-			</div>
-			<ul class="side-menu right-side-menu">
-				<li><a href="">О НАС</a></li>
-				<li><a href="">КОНТАКТЫ</a></li>
-				<li><a href="">АКЦИИ</a></li>
-				<li><a href="">БРЕНДЫ</a></li>
-			</ul>
-		</div>
-	</section>
-	
-	<section class="slider">
-		<div id="slides">
-	  <img src="img/1.jpg">
-      <img src="img/2.jpg">
-      <img src="img/3.jpg">
-      <img src="img/4.jpg">
-		</div>
-	</section>
-	
-	<section class="search">
-		<div class="etc">
-		<p>
-			НАЙДИТЕ НУЖНЫЙ ВАМ ТОВАР!
-		</p>
-		<form class="search-form" action="/searchitem" method="post">
-			<input type="search" name="search" placeholder="Найди товар" pattern="[a-zA-Z0-9]+">
-			<input class="one" type="submit" value="ПОИСК">
-		</form>
-		</div>
-		<div class="arrow">
-			<img src="img/arrow.png">
-		</div>
-	</section>
-	
-	<section class="brand">
-		<div class="slider2">
-			<div class="slider-item">
-				<img src="img/nivea.png">
-				<img src="img/dove.png">
-				<img src="img/freken.png">
-				<img src="img/lady.png">
-				<img src="img/selpac.png">
-				<img src="img/lenor.png">
-				<img src="img/duru.png">
-				<img src="img/sto.png">
-				<img src="img/line.png">
-				<img src="img/bella.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/nivea.png">
-				<img src="img/dove.png">
-				<img src="img/freken.png">
-				<img src="img/lady.png">
-				<img src="img/selpac.png">
-				<img src="img/lenor.png">
-				<img src="img/duru.png">
-				<img src="img/sto.png">
-				<img src="img/line.png">
-				<img src="img/bella.png">
-			</div>
-			<div class="slider-item">
-				<img src="img/nivea.png">
-				<img src="img/dove.png">
-				<img src="img/freken.png">
-				<img src="img/lady.png">
-				<img src="img/selpac.png">
-				<img src="img/lenor.png">
-				<img src="img/duru.png">
-				<img src="img/sto.png">
-				<img src="img/line.png">
-				<img src="img/bella.png">
-			</div>
-		</div>
-		<div class="left-arrow">
-			<img src="img/left.png">
-		</div>
-		<div class="right-arrow">
-			<img src="img/right.png">
-		</div>
-	</section>
-	
-	<section class="catalog">
-		<h1>
-			КАТАЛОГ
-		</h1>
-		<div class="pp powder">
-			<h2>
-				СТИРАЛЬНЫЕ<br>
-				ПОРОШКИ
-			</h2>
-			<img src="img/poroshok.png">
-		</div>
-		<div class="pp shampoo">
-			<h2>
-				ШАМПУНИ
-			</h2>
-			<img src="img/shampuni.png">
-		</div>
-		<div class="pp toothpaste">
-			<h2>
-				ЗУБНЫЕ ПАСТЫ
-			</h2>
-			<img src="img/pasti.png">
-		</div>
-		<div class="pp gels-washing">
-			<h2>
-				ГЕЛИ ДЛЯ<br>
-				СТИРКИ
-			</h2>
-			<img src="img/geli.png">
-		</div>
-		<div class="pp dishwashing">
-			<h2>
-				СРЕДСТВА ДЛЯ<br>
-				МЫТЬЯ ПОСУДЫ
-			</h2>
-			<img src="img/posuda.png">
-		</div>
-		
-		<div class="pp-info shampoo-info">			
-				<div class="info-item">
-					<div class="info-item-img">
-						<img src="img/i1.png">
-					</div>
-					<div class="info-item-title">
-						<h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
-					</div>
-					
-					<div class="info-item-control">
-						<div class="item-like"><img src="img/like-label.png"></div>
-						<div class="item-to-wallet"><img src="img/wallet-label.png"></div>
-						<div class="item-price"><p>1400р</p></div>
-					</div>					
-				</div>
-				<div class="info-item">
-					<div class="info-item-img">
-						<img src="img/i2.png">
-					</div>
-					<div class="info-item-title">
-						<h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
-					</div>
-					
-					<div class="info-item-control">
-						<div class="item-like"><img src="img/like-label.png"></div>
-						<div class="item-to-wallet"><img src="img/wallet-label.png"></div>
-						<div class="item-price"><p>1400р</p></div>
-					</div>			
-				</div>
-				<div class="info-item">
-					<div class="info-item-img">
-						<img src="img/i3.png">
-					</div>
-					<div class="info-item-title">
-						<h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
-					</div>
-					
-					<div class="info-item-control">
-						<div class="item-like"><img src="img/like-label.png"></div>
-						<div class="item-to-wallet"><img src="img/wallet-label.png"></div>
-						<div class="item-price"><p>1400р</p></div>
-					</div>			
-				</div>
-				<div class="info-item">
-					<div class="info-item-img">
-						<img src="img/i4.png">
-					</div>
-					<div class="info-item-title">
-						<h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
-					</div>
-					
-					<div class="info-item-control">
-						<div class="item-like"><img src="img/like-label.png"></div>
-						<div class="item-to-wallet"><img src="img/wallet-label.png"></div>
-						<div class="item-price"><p>1400р</p></div>
-					</div>				
-				</div>
-				<div class="info-item">
-					<div class="info-item-img">
-						<img src="img/i5.png">
-					</div>
-					<div class="info-item-title">
-						<h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
-					</div>
-					
-					<div class="info-item-control">
-						<div class="item-like"><img src="img/like-label.png"></div>
-						<div class="item-to-wallet"><img src="img/wallet-label.png"></div>
-						<div class="item-price"><p>1400р</p></div>
-					</div>			
-				</div>							
-		</div>
-	</section>
-	
-	<section class="social-networks">
-		<div class="sn facebook">
-		</div>
-		<div class="sn google">
-		</div>
-		<div class="sn twitter">
-		</div>
-		<div class="sn vk">
-		</div>
-		<div class="sn instagram">
-		</div>
-	</section>
-	
-	<section class="map">
-		<div class="above-map">
-			<h1>
-				МЫ НАХОДИМСЯ СОВСЕМ РЯДОМ
-			</h1>
-			<div class="arrow1">
-				<img src="img/arrow.png">
-			</div>
-		</div>
-		<div id="googleMap"></div>
-		<div class="bottles">
-			<img src="img/bottle.png">
-		</div>
-		<div class="for-connect">
-			<h1>
-				СВЯЖИСЬ С НАМИ
-			</h1>
-		</div>
-	</section>
-	
-	<section class="footer">
-		<form>
-			<div class="input-group">
-				<label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email" required>
-			</div>
-			<div class="input-group">
-				<label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text" pattern="[a-zA-Z0-9]+">
-			</div>
-			<div class="input-group">
-				<label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
-			</div>
-			<div class="input-group">
-				<input id="send" type="submit" value="Отправить">
-			</div>
-		</form>
-		<div class="general-items">
-			<div class="footer-item">
-				<img src="img/footer-c.png">
-				<h1>
-					БЫТОВАЯ ХИМИЯ
-				</h1>
-				<p>
-					095-477-45-84 Юлия<br>
-					093-851-92-83 Жанна<br>
-					095-687-91-44 Юрий
-				</p>
-			</div>
-		<div class="footer-item">
-			<img src="img/tsh.png">
-			<h1>
-				КОСМЕТИКА
-			</h1>
-			<p>	
-				095-606-35-28 Любовь<br>         
-				050-902-71-31 Марина
-			</p>
-		</div>
-		<div class="footer-item">
-			<img src="img/manager.png">
-			<h1>
-				СТ. МЕНЕДЖЕР
-			</h1>
-			<p>	
-				050-69-56-725 Наталья
-			</p>
-		</div>
-		</div>
-	</section>
-	
-	<section class="last-footer">
-		<p>
-			2016 © big-stirka.ru. Все права защищены
-		</p>
-	</section>
-	
-</body>
+        <body>
+            <section class="header">
+                <div class="center">
+                    <ul class="side-menu left-side-menu">
+                        <li><a href="">ГЛАВНАЯ</a></li>
+                        <li><a href="">КАТАЛОГ</a></li>
+                        <li><a href="">ГРАФИК РАБОТЫ</a></li>
+                        <li><a href="">АКЦИИ</a></li>
+                    </ul>
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+                    <div class="basket">
+                        <img src="img/basket.png">
+                        <p>
+                            В корзине:<br>
+                            Сумма:<b id="sum">10000p</b>	
+                        </p>
+                    </div>
+                    <ul class="side-menu right-side-menu">
+                        <li><a href="">О НАС</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                        <li><a href="">АКЦИИ</a></li>
+                        <li><a href="">БРЕНДЫ</a></li>
+                    </ul>
+                </div>
+            </section>
 
-<!-- SlidesJS Required: Link to jQuery -->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <!-- End SlidesJS Required -->
+            <section class="slider">
+                <div id="slides">
+                    <img src="img/1.jpg">
+                    <img src="img/2.jpg">
+                    <img src="img/3.jpg">
+                    <img src="img/4.jpg">
+                </div>
+            </section>
 
-  <!-- SlidesJS Required: Link to jquery.slides.js -->
-  <script src="js/jquery.slides.js"></script>
-  <!-- End SlidesJS Required -->
+            <section class="search">
+                <div class="etc">
+                    <p>
+                        НАЙДИТЕ НУЖНЫЙ ВАМ ТОВАР!
+                    </p>
+                    <form class="search-form" action="/searchitem" method="post">
+                        <input type="search" name="search" placeholder="Найди товар" pattern="[a-zA-Z0-9]+">
+                        <input class="one" type="submit" value="ПОИСК">
+                    </form>
+                </div>
+                <div class="arrow">
+                    <img src="img/arrow.png">
+                </div>
+            </section>
 
-  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-  <script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false
-      });
-    });
-  </script>
-  
-  <script>
-	var currentslide=2;
-	var maxSlides = 3;
-	function go(current){
-			
-			$(".slider-item").each(function(a,b){
-				$(b).css({"transition":"1s","transform":"translate(0px,-3000px)"});
-			});
-			
-			switch(current){
-				case 1: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(0px)"});break;
-				case 2: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(-300px)"});break;
-				case 3: $(".slider-item:nth-of-type("+current+")").css({"transition":"1s","transform":"translateY(-600px)"});break;
-			}					
-	}
-	
-	go(1);
-	$(document).ready(function()
-	{
-	
-		
-		$(".left-arrow").click(function()
-		{			
-			
-			go(currentslide);
-			if (currentslide<maxSlides)
-				currentslide++;
-			else
-				currentslide = 1;
-		
-		});
-		
-		$(".right-arrow").click(function()
-		{
-			go(currentslide);
-			if (currentslide>1)
-				currentslide--;
-			else
-				currentslide = maxSlides;
-		});
-	
-	
-		$(".pp").click(function(){
-			$(".pp").css({"height":"55px"});
-			$(".pp h2").css({"margin-top":"10px","font-size":"15pt","transition":"1s","font-family":"Impact"});
-			$(".pp-info").css({"display":"block"});
-		});	
-	
-	});
-</script>
-  
-</html>
+            <section class="brand">
+                <div class="slider2">
+                    <div class="slider-item">
+                        <img src="img/nivea.png">
+                        <img src="img/dove.png">
+                        <img src="img/freken.png">
+                        <img src="img/lady.png">
+                        <img src="img/selpac.png">
+                        <img src="img/lenor.png">
+                        <img src="img/duru.png">
+                        <img src="img/sto.png">
+                        <img src="img/line.png">
+                        <img src="img/bella.png">
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/nivea.png">
+                        <img src="img/dove.png">
+                        <img src="img/freken.png">
+                        <img src="img/lady.png">
+                        <img src="img/selpac.png">
+                        <img src="img/lenor.png">
+                        <img src="img/duru.png">
+                        <img src="img/sto.png">
+                        <img src="img/line.png">
+                        <img src="img/bella.png">
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/nivea.png">
+                        <img src="img/dove.png">
+                        <img src="img/freken.png">
+                        <img src="img/lady.png">
+                        <img src="img/selpac.png">
+                        <img src="img/lenor.png">
+                        <img src="img/duru.png">
+                        <img src="img/sto.png">
+                        <img src="img/line.png">
+                        <img src="img/bella.png">
+                    </div>
+                </div>
+                <div class="left-arrow">
+                    <img src="img/left.png">
+                </div>
+                <div class="right-arrow">
+                    <img src="img/right.png">
+                </div>
+            </section>
+
+            <section class="catalog">
+                <h1>
+                    КАТАЛОГ
+                </h1>
+                <div class="pp powder">
+                    <h2>
+                        СТИРАЛЬНЫЕ<br>
+                        ПОРОШКИ
+                    </h2>
+                    <img src="img/poroshok.png">
+                </div>
+                <div class="pp shampoo">
+                    <h2>
+                        ШАМПУНИ
+                    </h2>
+                    <img src="img/shampuni.png">
+                </div>
+                <div class="pp toothpaste">
+                    <h2>
+                        ЗУБНЫЕ ПАСТЫ
+                    </h2>
+                    <img src="img/pasti.png">
+                </div>
+                <div class="pp gels-washing">
+                    <h2>
+                        ГЕЛИ ДЛЯ<br>
+                        СТИРКИ
+                    </h2>
+                    <img src="img/geli.png">
+                </div>
+                <div class="pp dishwashing">
+                    <h2>
+                        СРЕДСТВА ДЛЯ<br>
+                        МЫТЬЯ ПОСУДЫ
+                    </h2>
+                    <img src="img/posuda.png">
+                </div>
+
+                <div class="pp-info shampoo-info">			
+                    <div class="info-item">
+                        <div class="info-item-img">
+                            <img src="img/i1.png">
+                        </div>
+                        <div class="info-item-title">
+                            <h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
+                        </div>
+
+                        <div class="info-item-control">
+                            <div class="item-like"  title="Добавить в избранное" rel="tooltip"><img src="img/like-label.png"></div>
+                            <div class="item-to-wallet"  title="Добавить в корзину" rel="tooltip"><img src="img/wallet-label.png"></div>
+                            <div class="item-price"><p>1400р</p></div>
+                        </div>					
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item-img">
+                            <img src="img/i2.png">
+                        </div>
+                        <div class="info-item-title">
+                            <h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
+                        </div>
+
+                       <div class="info-item-control">
+                            <div class="item-like"  title="Добавить в избранное" rel="tooltip"><img src="img/like-label.png"></div>
+                            <div class="item-to-wallet"  title="Добавить в корзину" rel="tooltip"><img src="img/wallet-label.png"></div>
+                            <div class="item-price"><p>1400р</p></div>
+                        </div>			
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item-img">
+                            <img src="img/i3.png">
+                        </div>
+                        <div class="info-item-title">
+                            <h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
+                        </div>
+
+                       <div class="info-item-control">
+                            <div class="item-like"  title="Добавить в избранное" rel="tooltip"><img src="img/like-label.png"></div>
+                            <div class="item-to-wallet"  title="Добавить в корзину" rel="tooltip"><img src="img/wallet-label.png"></div>
+                            <div class="item-price"><p>1400р</p></div>
+                        </div>			
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item-img">
+                            <img src="img/i4.png">
+                        </div>
+                        <div class="info-item-title">
+                            <h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
+                        </div>
+
+                       <div class="info-item-control">
+                            <div class="item-like"  title="Добавить в избранное" rel="tooltip"><img src="img/like-label.png"></div>
+                            <div class="item-to-wallet"  title="Добавить в корзину" rel="tooltip"><img src="img/wallet-label.png"></div>
+                            <div class="item-price"><p>1400р</p></div>
+                        </div>				
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item-img">
+                            <img src="img/i5.png">
+                        </div>
+                        <div class="info-item-title">
+                            <h1>"Пучной Мишка" ЛАСКА НЕЖНЫЙ 0.5 Л</h1>
+                        </div>
+
+                       <div class="info-item-control">
+                            <div class="item-like"  title="Добавить в избранное" rel="tooltip"><img src="img/like-label.png"></div>
+                            <div class="item-to-wallet"  title="Добавить в корзину" rel="tooltip"><img src="img/wallet-label.png"></div>
+                            <div class="item-price"><p>1400р</p></div>
+                        </div>			
+                    </div>							
+                </div>
+            </section>
+
+            <section class="social-networks">
+                <div class="sn facebook">
+                </div>
+                <div class="sn google">
+                </div>
+                <div class="sn twitter">
+                </div>
+                <div class="sn vk">
+                </div>
+                <div class="sn instagram">
+                </div>
+            </section>
+
+            <section class="map">
+                <div class="above-map">
+                    <h1>
+                        МЫ НАХОДИМСЯ СОВСЕМ РЯДОМ
+                    </h1>
+                    <div class="arrow1">
+                        <img src="img/arrow.png">
+                    </div>
+                </div>
+                <div id="googleMap"></div>
+                <div class="bottles">
+                    <img src="img/bottle.png">
+                </div>
+                <div class="for-connect">
+                    <h1>
+                        СВЯЖИСЬ С НАМИ
+                    </h1>
+                </div>
+            </section>
+
+            <section class="footer">
+                <form>
+                    <div class="input-group">
+                        <label for="input-email">ВАШ E-MAIL</label><input id="input-email" type="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="input-name">ВАШЕ ИМЯ</label><input id="input-name" type="text" pattern="[a-zA-Z0-9]+">
+                    </div>
+                    <div class="input-group">
+                        <label for="input-message">СООБЩЕНИЕ</label><textarea id="input-message"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <input id="send" type="submit" value="Отправить">
+                    </div>
+                </form>
+                <div class="general-items">
+                    <div class="footer-item">
+                        <img src="img/footer-c.png">
+                        <h1>
+                            БЫТОВАЯ ХИМИЯ
+                        </h1>
+                        <p>
+                            095-477-45-84 Юлия<br>
+                            093-851-92-83 Жанна<br>
+                            095-687-91-44 Юрий
+                        </p>
+                    </div>
+                    <div class="footer-item">
+                        <img src="img/tsh.png">
+                        <h1>
+                            КОСМЕТИКА
+                        </h1>
+                        <p>	
+                            095-606-35-28 Любовь<br>         
+                            050-902-71-31 Марина
+                        </p>
+                    </div>
+                    <div class="footer-item">
+                        <img src="img/manager.png">
+                        <h1>
+                            СТ. МЕНЕДЖЕР
+                        </h1>
+                        <p>	
+                            050-69-56-725 Наталья
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="last-footer">
+                <p>
+                    2016 © big-stirka.ru. Все права защищены
+                </p>
+            </section>
+
+        </body>
+
+        <!-- SlidesJS Required: Link to jQuery -->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <!-- SlidesJS Required: Link to jquery.slides.js -->
+        <script src="js/jquery.slides.js"></script>
+        <!-- End SlidesJS Required -->
+
+        <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+        <script>
+            $(function() {
+                $('#slides').slidesjs({
+                    width: 940,
+                    height: 528,
+                    navigation: false
+                });
+            });
+        </script>
+		<script src="js/main.js"></script>
+    </html>
