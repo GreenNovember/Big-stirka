@@ -68,6 +68,7 @@ section
 {
     float: left;
     padding: 30px 18px 30px 18px;
+	cursor:pointer;
 }
 
 .right-side-menu li a,
@@ -694,7 +695,7 @@ form
     margin-left: 95px;
 }
 .footer {
-float: left;
+    display: inline-block;
 }
 .footer .input-group-2 input,
 .footer .input-group-2 label {
@@ -1132,3 +1133,16 @@ float: left;
 }
 
 
+.item-wallet {
+border:1px red solid;
+height:200px;
+display: initial;
+
+
+}
+
+.rrr {
+border:1px green solid;
+height:200px;
+
+}
