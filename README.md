@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Yii 2 Basic Project Template
 ============================
 
@@ -99,3 +100,9 @@ return [
 **NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
 
 Also check and edit the other files in the `config/` directory to customize your application.
+=======
+# Big-stirka
+
+![English](https://raw.githubusercontent.com/Areso/hydrostatic_test/master/screenshot_eng.png)
+![Russian](https://raw.githubusercontent.com/Areso/hydrostatic_test/master/screenshot_rus.png)
+>>>>>>> 0f001800faf4f9d79b996b8b5d966f353e34a6e5
