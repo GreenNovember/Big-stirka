@@ -1,5 +1,16 @@
 var currentslide = 2;
 var maxSlides = 3;
+
+function onResize(){
+/*var size = [document.documentElement.clientWidth,document.documentElement.clientHeight];
+window.onresize = function(){
+	if (document.documentElement.clientWidth>1300)
+		document.body.style.zoom=document.documentElement.clientWidth/size[0];
+	else
+		document.body.style.zoom = document.documentElement.clientWidth/1000;
+}
+*/
+}
 function go(current) {
 
 	$(".slider-item").each(function(a, b) {
@@ -22,6 +33,61 @@ function go(current) {
 go(1);
 
 $(document).ready(function() {
+	onResize();
+	
+	$("#send").click(function(){
+		var name = $("#input-name").val();
+		var email = $("#input-email").val();
+		var message = $("#input-message").html();
+		
+		$.post("./doSomth.php?do=mail",{
+			"name_field":name,
+			"email":email,
+			"message":message
+			},function(data){
+				alert(data);
+			});
+	});
+	
+	$(".addToBasket").click(function(){
+		var item = $(this).attr("itemId");
+
+		$.post("./doSomth.php?do=add",{
+			'itemId':item
+			},function(data,status){
+				$("#sum").html(data);
+			});
+	});
+	
+	$(".removeFromBasket").click(function(){
+		var item = $(this).attr("itemId");
+
+		$.post("./doSomth.php?do=remove",{
+			"itemId":item
+			},function(data,status){
+				alert("success"+data);
+			});
+	});
+	
+	$(".getBasket").click(function(){
+		var item = $(this).attr("itemId");
+
+		$.post("./doSomth.php?do=getList",{
+			"itemId":item
+			},function(data,status){
+				alert("success"+data);
+			});
+	});
+	
+	$(".byeProduct").click(function(){
+		$.post("./doSomth.php?do=bye",{
+			"itemId":item
+			},function(data,status){
+				alert("success"+data);
+			});
+	});
+
+
 	var targets = $('[rel~=tooltip]'),
 			target = false,
 			tooltip = false,
